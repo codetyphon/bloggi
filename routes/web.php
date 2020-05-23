@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'UserController@home');
-
+Route::get('login', 'UserController@redirectToProvider');
+Route::get('login/callback', 'UserController@handleProviderCallback');
 
 Route::get('/posts', 'PostController@list');
 Route::get('/posts/new', 'PostController@new');
@@ -29,7 +30,6 @@ Route::put('/pages', 'PageController@save');
 Route::delete('/pages', 'PageController@del');
 
 Route::get('/signin', 'UserController@page_signin');
-Route::get('/signup', 'UserController@page_signup');
 Route::get('/logout', 'UserController@page_logout');
 Route::post('/signin', 'UserController@api_signin');
 Route::post('/signup', 'UserController@api_signup');

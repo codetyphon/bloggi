@@ -46,10 +46,9 @@
 
                         @if((session()->get('blog_name')!==null))
                         <a class="nav_item" target="_blank" href="/">manage</a>
-                        <a class="nav_item" target="_blank" href="/logout">logout</a>
+                        <a class="nav_item" href="/logout">logout</a>
                         @else
                         <a class="nav_item" target="_blank" href="/signin">signin</a>
-                        <a class="nav_item" target="_blank" href="/signup">signup</a>
                         @endif
                     </nav>
             </header>

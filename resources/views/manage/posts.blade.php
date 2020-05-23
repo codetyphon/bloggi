@@ -44,7 +44,7 @@
                         <a class="nav_item" href="/pages">Pages</a>
                         <a class="nav_item" href="/settings">Settings</a>
                         <a class="nav_item" target="_blank" href="/{{ $blog_name }}">{{ $blog_name }}'s blog ›</a>
-                        <a class="nav_item" target="_blank" href="/logout">logout</a>
+                        <a class="nav_item" href="/logout">logout</a>
                     </nav>
             </header>
 

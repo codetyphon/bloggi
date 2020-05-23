@@ -49,3 +49,14 @@ CREATE TABLE `settings` (
 cd public
 php -S localhost:3000
 ```
+
+
+需要配置github登陆：
+
+https://github.com/settings/applications/new
+
+```
+GITHUB_KEY=xxx
+GITHUB_SECRET=xxx
+GITHUB_REDIRECT_URI=http://localhost:3000/login/callback
+```
